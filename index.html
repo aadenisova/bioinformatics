@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая биоинформатика - HSE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-dna"></i>
+                    <span>Bioinformatics Lab</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#topics">Темы</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#resources">Ресурсы</a></li>
+                    <li><a href="#about">О курсе</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Практическая биоинформатика</h1>
+                    <p class="hero-subtitle">Изучаем современные методы анализа биологических данных через практические проекты</p>
+                    <div class="hero-buttons">
+                        <a href="#topics" class="btn btn-primary">Начать изучение</a>
+                        <a href="#projects" class="btn btn-secondary">Посмотреть проекты</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="dna-animation">
+                        <div class="dna-strand">
+                            <div class="base-pair"></div>
+                            <div class="base-pair"></div>
+                            <div class="base-pair"></div>
+                            <div class="base-pair"></div>
+                            <div class="base-pair"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="topics" class="topics">
+            <div class="container">
+                <h2 class="section-title">Темы курса</h2>
+                <div class="topics-grid">
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h3>Анализ метагенома</h3>
+                        <p>Изучение микробных сообществ и их генетического разнообразия</p>
+                        <div class="topic-tags">
+                            <span class="tag">16S rRNA</span>
+                            <span class="tag">OTU кластеризация</span>
+                            <span class="tag">Alpha/Beta разнообразие</span>
+                        </div>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>GWAS анализ</h3>
+                        <p>Поиск ассоциаций между генетическими вариантами и фенотипами</p>
+                        <div class="topic-tags">
+                            <span class="tag">SNP</span>
+                            <span class="tag">Статистический анализ</span>
+                            <span class="tag">Manhattan plot</span>
+                        </div>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <i class="fas fa-align-left"></i>
+                        </div>
+                        <h3>Выравнивание последовательностей</h3>
+                        <p>Локальное и глобальное выравнивание, множественное выравнивание</p>
+                        <div class="topic-tags">
+                            <span class="tag">BLAST</span>
+                            <span class="tag">Needleman-Wunsch</span>
+                            <span class="tag">ClustalW</span>
+                        </div>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h3>Сборка геномов</h3>
+                        <p>De novo и reference-based сборка геномных последовательностей</p>
+                        <div class="topic-tags">
+                            <span class="tag">De Bruijn графы</span>
+                            <span class="tag">SPAdes</span>
+                            <span class="tag">Качество сборки</span>
+                        </div>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <i class="fas fa-bacteria"></i>
+                        </div>
+                        <h3>Анализ микробиома</h3>
+                        <p>Изучение состава и функций микробных сообществ</p>
+                        <div class="topic-tags">
+                            <span class="tag">QIIME2</span>
+                            <span class="tag">Taxonomy</span>
+                            <span class="tag">Функциональный анализ</span>
+                        </div>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Программирование для биоинформатики</h3>
+                        <p>Python, R, bash для анализа биологических данных</p>
+                        <div class="topic-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">R</span>
+                            <span class="tag">Bash</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Студенческие проекты</h2>
+                <div class="projects-grid" id="projects-container">
+                    <!-- Проекты будут добавляться динамически -->
+                </div>
+                <div class="add-project-section">
+                    <h3>Добавить свой проект</h3>
+                    <p>Заполните форму ниже, чтобы добавить ваш проект в галерею</p>
+                    <form id="project-form" class="project-form">
+                        <div class="form-group">
+                            <label for="project-name">Название проекта</label>
+                            <input type="text" id="project-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="project-author">Автор</label>
+                            <input type="text" id="project-author" name="author" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="project-topic">Тема</label>
+                            <select id="project-topic" name="topic" required>
+                                <option value="">Выберите тему</option>
+                                <option value="metagenomics">Анализ метагенома</option>
+                                <option value="gwas">GWAS анализ</option>
+                                <option value="alignment">Выравнивание последовательностей</option>
+                                <option value="assembly">Сборка геномов</option>
+                                <option value="microbiome">Анализ микробиома</option>
+                                <option value="programming">Программирование</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="project-description">Описание</label>
+                            <textarea id="project-description" name="description" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="project-github">GitHub репозиторий</label>
+                            <input type="url" id="project-github" name="github" placeholder="https://github.com/username/repo">
+                        </div>
+                        <div class="form-group">
+                            <label for="project-image">Скриншот/изображение (URL)</label>
+                            <input type="url" id="project-image" name="image" placeholder="https://example.com/image.png">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Добавить проект</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="resources">
+            <div class="container">
+                <h2 class="section-title">Полезные ресурсы</h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <h3>Инструменты</h3>
+                        <ul>
+                            <li><a href="https://qiime2.org/" target="_blank">QIIME2</a> - анализ микробиома</li>
+                            <li><a href="https://www.plink2.org/" target="_blank">PLINK</a> - GWAS анализ</li>
+                            <li><a href="https://blast.ncbi.nlm.nih.gov/" target="_blank">BLAST</a> - поиск гомологий</li>
+                            <li><a href="https://cab.spbu.ru/software/spades/" target="_blank">SPAdes</a> - сборка геномов</li>
+                        </ul>
+                    </div>
+                    <div class="resource-card">
+                        <h3>Базы данных</h3>
+                        <ul>
+                            <li><a href="https://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a> - генетические базы данных</li>
+                            <li><a href="https://www.ensembl.org/" target="_blank">Ensembl</a> - аннотация геномов</li>
+                            <li><a href="https://greengenes.secondgenome.com/" target="_blank">Greengenes</a> - 16S rRNA</li>
+                            <li><a href="https://www.ebi.ac.uk/" target="_blank">EBI</a> - европейская биоинформатика</li>
+                        </ul>
+                    </div>
+                    <div class="resource-card">
+                        <h3>Учебные материалы</h3>
+                        <ul>
+                            <li><a href="https://www.coursera.org/learn/bioinformatics" target="_blank">Coursera - Bioinformatics</a></li>
+                            <li><a href="https://www.edx.org/learn/bioinformatics" target="_blank">edX - Bioinformatics</a></li>
+                            <li><a href="https://rosalind.info/" target="_blank">Rosalind</a> - задачи по биоинформатике</li>
+                            <li><a href="https://www.biostars.org/" target="_blank">Biostars</a> - форум биоинформатиков</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">О курсе</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Курс "Практическая биоинформатика" предназначен для студентов, которые хотят получить практические навыки работы с биологическими данными. Мы фокусируемся на реальных проектах и использовании современных инструментов биоинформатики.</p>
+                        <p>Каждый студент создает собственный GitHub репозиторий, где размещает результаты своих исследований, код и документацию. Это помогает не только закрепить полученные знания, но и создать портфолио для будущей карьеры.</p>
+                        <div class="course-features">
+                            <div class="feature">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>Практические задания</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>Работа в команде</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-github"></i>
+                                <span>GitHub портфолио</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-certificate"></i>
+                                <span>Сертификат по окончании</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">12+</div>
+                            <div class="stat-label">Тем</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Практических заданий</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Инструментов</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Практика</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Практическая биоинформатика</h3>
+                    <p>Курс для студентов HSE по изучению современных методов анализа биологических данных</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-envelope"></i> bioinformatics@hse.ru</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Москва, Россия</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Следите за нами</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Практическая биоинформатика HSE. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
